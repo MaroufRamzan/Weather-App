@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <audio class="myAudio">
+        <source src="Audio/Clearly.mp3" type="audio/mp3">
+    </audio>
+    <audio class="Rainy">
+        <source src="Audio/RainY.mp3" type="audio/mp3">
+    </audio>
+    <audio class="cloudy">
+        <source src="Audio/Cloudi.mp3" type="audio/mp3">
+    </audio>
+
+    <div class="container">
+        <div class="box">
+            <div class="search">
+                <input type="text" placeholder="City">
+                <!-- <i class="fa-solid fa-magnifying-glass"></i> -->
+                <button><i class="bi bi-search"></i></button>
+            </div>
+            <div class="errorMsg">
+                Enter a Valid City!
+            </div>
+            <div class="mainBlock">
+                <div class="mainContent">
+                    <img src="images/clear.png" alt="" class="whether-icon">
+                    <div class="temp">
+                        4
+                    </div>
+                    <div class="city">
+
+                    </div>
+                </div>
+
+                <div class="footContent">
+                    <div class="left">
+                        <img src="images/humidity.png" alt="">
+                        <div class="humidity">
+                            <div class="humupdate">
+                                48
+                            </div>
+                            <p>Humidity</p>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <img src="images/wind.png" alt="">
+                        <div class="Wind">
+                            <div class="WinUpd">
+                                10
+                            </div>
+                            <p>Wind Speed</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

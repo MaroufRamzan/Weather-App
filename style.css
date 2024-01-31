@@ -1,0 +1,105 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* width: 25%;
+    margin: 100px  100px; */
+    padding: 100px 0;
+    border-radius: 15px;
+    background: linear-gradient(135deg,#00feba,#fb548a);
+}
+.box .search{
+    display: flex;
+    font-size: x-large;
+
+}
+.box .search input{
+    border-radius: 13px;
+    border: solid black;
+    padding-left: 5px;
+}
+.box .search button{
+    border-radius: 7px;
+    border: 0;
+    cursor: pointer;
+}
+.box .search input,.box .search button{
+    font-size: xx-large;
+    margin-right: 5px;
+}
+
+/* Main Content */
+.mainContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 2;
+}
+
+.temp,.city{
+    color: white;
+    font-weight: 500;
+}
+.temp{
+    font-weight: bolder;
+    font-size: xx-large;
+}
+.city{
+    font-size: xx-large;
+}
+
+.footContent{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-between;
+}
+.footContent img{
+    height: 32px;
+}
+.footContent .left,.right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 14px;
+}
+.left{
+    margin-right: 65px;
+}
+.footContent .left p,.right p{
+    color: white;
+    font-weight: bolder;
+}
+
+.errorMsg{
+
+    color: rgb(255, 255, 255);
+    font-size: x-large;
+    font-weight: bold;
+    display: none;
+}
+.mainBlock{
+    display: none;
+}
+
+.humupdate,.WinUpd{
+    color: white;
+    font-weight: bold;
+}
+
+/* adding Media Query */
+@media only screen and (max-width: 600px) {
+    .box{
+        width: 100%;
+    }
+    .search input{
+        width: 271px;
+    }
+}
